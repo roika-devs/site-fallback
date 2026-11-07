@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <title>Privacy Policy — Roika Games</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --surface: #111118;
+            --border: #2a2a3a;
+            --gold: #c9a84c;
+            --gold-dim: #7a6130;
+            --text: #d4cfc4;
+            --text-dim: #8e8881;
+            --pixel: 'Press Start 2P', monospace;
+            --serif: 'Crimson Text', serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--serif);
+            font-size: 18px;
+            min-height: 100vh;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9998;
+            opacity: 0.4;
+        }
+
+        header {
+            background: rgba(10, 10, 15, 0.95);
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            min-height: 60px;
+        }
+
+        .logo {
+            font-family: var(--pixel);
+            font-size: 10px;
+            color: var(--gold);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--text-dim);
+            font-size: 7px;
+            display: block;
+            margin-top: 8px;
+        }
+
+        .back-link {
+            color: var(--text-dim);
+            font-family: var(--pixel);
+            font-size: 7px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--gold);
+        }
+
+        .legal-page {
+            min-height: 85vh;
+            padding: 5rem 2rem;
+            background:
+                radial-gradient(
+                    ellipse 80% 60% at 50% 110%,
+                    rgba(184, 50, 50, 0.12),
+                    transparent 70%
+                ),
+                radial-gradient(
+                    ellipse 60% 40% at 50% -10%,
+                    rgba(201, 168, 76, 0.07),
+                    transparent 60%
+                ),
+                var(--bg);
+        }
+
+        .legal-card {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid var(--border);
+            background: rgba(17, 17, 24, 0.9);
+            padding: 2.5rem;
+            box-shadow: 0 0 40px rgba(201, 168, 76, 0.08);
+        }
+
+        .legal-card h1 {
+            font-family: var(--pixel);
+            font-size: 18px;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .legal-card h2 {
+            font-family: var(--pixel);
+            font-size: 9px;
+            color: var(--gold-dim);
+            margin: 2.5rem 0 1rem;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+
+        .legal-card p {
+            font-size: 17px;
+            line-height: 1.75;
+            margin-bottom: 1.25rem;
+        }
+
+        .legal-card ul {
+            margin: 0 0 1.5rem 1.5rem;
+        }
+
+        .legal-card li {
+            font-size: 17px;
+            line-height: 1.75;
+            margin-bottom: 0.4rem;
+        }
+
+        .legal-card a {
+            color: var(--gold);
+            text-decoration: underline;
+            overflow-wrap: anywhere;
+        }
+
+        .legal-card a:hover {
+            color: #e7c878;
+        }
+
+        .updated {
+            font-size: 15px !important;
+            color: var(--text-dim);
+            margin-bottom: 2rem !important;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer p {
+            font-family: var(--pixel);
+            font-size: 6px;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+            line-height: 2;
+        }
+
+        .heart {
+            color: #c94a4a;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 0 1rem;
+            }
+
+            .legal-page {
+                padding: 2rem 1rem;
+            }
+
+            .legal-card {
+                padding: 1.5rem;
+            }
+
+            .legal-card h1 {
+                font-size: 13px;
+            }
+
+            .legal-card h2 {
+                font-size: 8px;
+            }
+
+            .legal-card p,
+            .legal-card li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="/">
+            ROIKA
+            <span>GAME STUDIO</span>
+        </a>
+
+        <a class="back-link" href="/">
+            BACK TO WEBSITE
+        </a>
+    </header>
+
+    <main class="legal-page">
+        <article class="legal-card">
+
+            <h1>Roika Games Privacy Policy</h1>
+
+            <p class="updated">
+                Last updated: November 7, 2026
+            </p>
+
+            <p>
+                Roika ("we", "us", or "our") develops and
+                publishes mobile games. This Privacy Policy
+                explains how information may be collected,
+                used, stored, and shared when you use our
+                games and related services.
+            </p>
+
+            <p>
+                This Privacy Policy applies to games
+                developed and published by Roika that
+                link to this document, including
+                Darkrise - Pixel Action RPG and
+                Dice RPG (working title).
+            </p>
+
+            <p>
+                Different games may use different features
+                and third-party services. Not every
+                service described in this policy is
+                necessarily used by every game.
+            </p>
+
+            <h2>1. Information We Collect</h2>
+
+            <p>
+                Depending on the game and its features,
+                we and our service providers may collect
+                or process the following information:
+            </p>
+
+            <ul>
+                <li>
+                    Device information, including device
+                    model, operating system, language,
+                    and application version.
+                </li>
+                <li>
+                    Technical information, such as IP
+                    address, device identifiers, and
+                    diagnostic data.
+                </li>
+                <li>
+                    Gameplay information, including
+                    progress, achievements, settings,
+                    and in-game activity.
+                </li>
+                <li>
+                    Advertising information, including
+                    advertising identifiers, ad
+                    interactions, and consent preferences.
+                </li>
+                <li>
+                    Account identifiers and authentication
+                    information when you choose to use
+                    account or cloud save features.
+                </li>
+                <li>
+                    Information you voluntarily provide
+                    when contacting us for support.
+                </li>
+            </ul>
+
+            <p>
+                Some information is stored locally
+                on your device, while other information
+                may be processed by third-party
+                services used by the game.
+            </p>
+
+            <h2>2. How We Use Information</h2>
+
+            <p>
+                Information may be used for the following
+                purposes:
+            </p>
+
+            <ul>
+                <li>
+                    Providing and maintaining our games.
+                </li>
+                <li>
+                    Saving and restoring gameplay progress.
+                </li>
+                <li>
+                    Supporting authentication and
+                    cloud synchronization.
+                </li>
+                <li>
+                    Understanding game performance
+                    and improving gameplay.
+                </li>
+                <li>
+                    Detecting technical problems,
+                    crashes, and service errors.
+                </li>
+                <li>
+                    Displaying advertisements and,
+                    where permitted, measuring their
+                    effectiveness.
+                </li>
+                <li>
+                    Processing purchases and restoring
+                    purchased content.
+                </li>
+                <li>
+                    Responding to support requests.
+                </li>
+            </ul>
+
+            <h2>3. Advertising</h2>
+
+            <p>
+                Some of our games display advertisements
+                through Google AdMob and advertising
+                partners participating in its
+                mediation services.
+            </p>
+
+            <p>
+                Advertising providers may process
+                information such as device identifiers,
+                IP addresses, approximate location
+                derived from network information,
+                and advertising interactions.
+            </p>
+
+            <p>
+                Depending on your location, privacy
+                choices, and applicable laws,
+                advertisements may be personalized
+                or non-personalized.
+            </p>
+
+            <p>
+                Some games may offer optional rewarded
+                advertisements that provide in-game
+                rewards when viewed.
+            </p>
+
+            <p>
+                For more information about Google's
+                advertising privacy practices, visit:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://policies.google.com/privacy"
+                       target="_blank" rel="noopener noreferrer">
+                        Google Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://support.google.com/admob/answer/6128543"
+                       target="_blank" rel="noopener noreferrer">
+                        Google AdMob Privacy Information
+                    </a>
+                </li>
+            </ul>
+
+            <h2>4. Analytics and Diagnostics</h2>
+
+            <p>
+                Some of our games may use analytics
+                and diagnostic services, including
+                Firebase services provided by Google.
+            </p>
+
+            <p>
+                These services may collect technical
+                and usage information such as app
+                interactions, session statistics,
+                device information, and crash reports.
+            </p>
+
+            <p>
+                We use this information to understand
+                how our games perform, investigate
+                errors, and improve the user experience.
+            </p>
+
+            <p>
+                Learn more:
+                <a href="https://firebase.google.com/support/privacy"
+                   target="_blank" rel="noopener noreferrer">
+                    Firebase Privacy Information
+                </a>
+            </p>
+
+            <h2>5. Accounts and Cloud Saves</h2>
+
+            <p>
+                Certain games may provide optional
+                account authentication and cloud
+                save functionality.
+            </p>
+
+            <p>
+                Depending on the game, authentication
+                may be provided through services such
+                as Google Play Games, Apple Sign-In,
+                or Firebase Authentication.
+            </p>
+
+            <p>
+                When these features are used, we may
+                process account identifiers and
+                gameplay data necessary to associate
+                saved progress with an account.
+            </p>
+
+            <p>
+                Cloud save data may include character
+                progression, inventory, achievements,
+                game settings, and other gameplay-related
+                information.
+            </p>
+
+            <p>
+                Cloud data is used to synchronize
+                progress, restore saved games, and
+                maintain account-related features.
+            </p>
+
+            <h2>6. In-App Purchases</h2>
+
+            <p>
+                Some games offer optional in-app purchases.
+                Payments are processed by platform
+                providers such as Google Play
+                and the Apple App Store.
+            </p>
+
+            <p>
+                We may receive purchase status,
+                transaction identifiers, and other
+                information needed to validate or
+                restore purchased content.
+            </p>
+
+            <p>
+                Payment card details are processed
+                by the relevant payment provider
+                rather than directly by our games.
+            </p>
+
+            <h2>7. GDPR and Privacy Choices</h2>
+
+            <p>
+                Where required by applicable privacy
+                laws, including those in the European
+                Economic Area and the United Kingdom,
+                our games may request consent for
+                certain advertising and data
+                processing activities.
+            </p>
+
+            <p>
+                We may use Google's User Messaging
+                Platform (UMP) to display consent
+                messages and manage advertising
+                privacy choices.
+            </p>
+
+            <p>
+                Where required, users can review
+                or modify their advertising privacy
+                choices through the Privacy Settings
+                option available in the game.
+            </p>
+
+            <p>
+                You may also have rights to request
+                access to, correction of, or deletion
+                of personal information, or to
+                object to or restrict certain processing,
+                depending on applicable law.
+            </p>
+
+            <h2>8. Apple App Tracking Transparency</h2>
+
+            <p>
+                On iOS devices, our games may request
+                permission to track activity across
+                other companies' apps and websites
+                through Apple's App Tracking
+                Transparency framework.
+            </p>
+
+            <p>
+                You can manage tracking permissions
+                in your device's privacy settings.
+            </p>
+
+            <p>
+                Your choice regarding tracking
+                is separate from other privacy
+                choices that may be presented
+                within the game.
+            </p>
+
+            <h2>9. Data Storage and Security</h2>
+
+            <p>
+                We take reasonable technical and
+                organizational measures to protect
+                information processed through
+                our games and services.
+            </p>
+
+            <p>
+                Depending on the feature, data may
+                be stored locally on your device
+                or processed by third-party
+                infrastructure providers.
+            </p>
+
+            <p>
+                However, no method of electronic
+                storage or transmission over
+                the Internet can be guaranteed
+                to be completely secure.
+            </p>
+
+            <h2>10. Data Retention and Deletion</h2>
+
+            <p>
+                We retain information only for as long
+                as reasonably necessary for the purposes
+                described in this policy, subject to
+                applicable legal, security, and
+                operational requirements.
+            </p>
+
+            <p>
+                Data stored locally on your device
+                may be removed by deleting the
+                application or clearing its data.
+                This does not necessarily remove
+                information stored in cloud services.
+            </p>
+
+            <p>
+                If a game provides an account or
+                cloud save feature, you may contact
+                us to request deletion of associated
+                account information and saved data.
+            </p>
+
+            <p>
+                To request deletion, email us using
+                the contact information below.
+                Please include the name of the game
+                and sufficient information to help
+                us identify the relevant account.
+                Do not send passwords or other
+                sensitive authentication credentials.
+            </p>
+
+            <p>
+                We may need to verify account
+                ownership before processing a request.
+                Where applicable, we will also
+                provide an in-game method to
+                initiate account deletion.
+            </p>
+
+            <p>
+                Certain information may be retained
+                where required by law or for legitimate
+                purposes such as fraud prevention,
+                security, or resolving transactions.
+            </p>
+
+            <h2>11. Third-Party Services</h2>
+
+            <p>
+                Depending on the game and platform,
+                our games may integrate services
+                provided by external companies,
+                including:
+            </p>
+
+            <ul>
+                <li>
+                    Google Play Services
+                </li>
+                <li>
+                    Google AdMob and its mediation partners
+                </li>
+                <li>
+                    Google Firebase
+                </li>
+                <li>
+                    Google Play Games Services
+                </li>
+                <li>
+                    Apple Game Center and Apple Sign-In
+                </li>
+                <li>
+                    Google Play Billing and Apple
+                    In-App Purchase services
+                </li>
+            </ul>
+
+            <p>
+                These providers may process information
+                under their own privacy policies.
+                We encourage users to review the
+                policies of relevant providers.
+            </p>
+
+            <h2>12. Children's Privacy</h2>
+
+            <p>
+                Our games are intended for audiences
+                appropriate to their respective
+                age ratings.
+            </p>
+
+            <p>
+                We do not knowingly collect personal
+                information from children in violation
+                of applicable privacy laws.
+            </p>
+
+            <p>
+                If you believe that personal information
+                relating to a child has been collected
+                improperly, please contact us so that
+                we can investigate and take appropriate
+                action.
+            </p>
+
+            <h2>13. International Data Processing</h2>
+
+            <p>
+                Third-party service providers used
+                by our games may process information
+                in countries other than your country
+                of residence.
+            </p>
+
+            <p>
+                Where applicable, such processing
+                is subject to relevant legal
+                requirements and safeguards.
+            </p>
+
+            <h2>14. Links to Other Websites</h2>
+
+            <p>
+                Our games may contain links to
+                third-party websites or services
+                that we do not operate.
+            </p>
+
+            <p>
+                We are not responsible for the
+                privacy practices or content
+                of those third-party websites.
+                We recommend reviewing their
+                respective privacy policies.
+            </p>
+
+            <h2>15. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy
+                to reflect changes in our games,
+                services, or applicable legal
+                requirements.
+            </p>
+
+            <p>
+                Updates will be published on this
+                page with a revised "Last updated"
+                date. Where required by law,
+                we will provide additional notice.
+            </p>
+
+            <h2>16. Contact Us</h2>
+
+            <p>
+                If you have questions about this
+                Privacy Policy, privacy rights,
+                or data deletion requests,
+                you can contact us at:
+            </p>
+
+            <p>
+                <a href="mailto:roikadevs@email.com?subject=Roika%20Privacy%20Request">
+                    roikadevs@email.com
+                </a>
+            </p>
+
+            <p>
+                Developer: Roika
+            </p>
+
+            <p>
+                Website:
+                <a href="https://roika.org/">
+                    https://roika.org/
+                </a>
+            </p>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            © 2019-2026 ROIKA · ALL RIGHTS RESERVED
+        </p>
+
+        <p>
+            MADE WITH <span class="heart">♥</span>
+            AND MANY PIXELS
+        </p>
+    </footer>
+
+</body>
+</html>
